@@ -1,9 +1,27 @@
 {
-  "task": "Electrical Inspection",
-  "delay_days": 4,
-  "project_buffer_days": 2,
-  "dependent_tasks": [
-    "Final Inspection",
-    "Project Handover"
+  "latest_team_update": "Electrical Inspection is delayed by four days because the required permit has not been approved.",
+  "tasks": [
+    {
+      "name": "Electrical Inspection",
+      "delay_days": 4,
+      "project_buffer_days": 2,
+      "dependencies": []
+    },
+    {
+      "name": "Final Inspection",
+      "delay_days": 0,
+      "project_buffer_days": 0,
+      "dependencies": [
+        "Electrical Inspection"
+      ]
+    },
+    {
+      "name": "Project Handover",
+      "delay_days": 0,
+      "project_buffer_days": 0,
+      "dependencies": [
+        "Final Inspection"
+      ]
+    }
   ]
 }
