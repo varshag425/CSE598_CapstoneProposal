@@ -1,0 +1,9 @@
+{
+  "task": "Electrical Inspection",
+  "delay_days": 4,
+  "project_buffer_days": 2,
+  "dependent_tasks": [
+    "Final Inspection",
+    "Project Handover"
+  ]
+}
